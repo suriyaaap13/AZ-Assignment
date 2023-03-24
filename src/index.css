@@ -16,14 +16,42 @@
     background: linear-gradient(90.76deg, #FFFFFF 0%, #DFF6FF 144.63%);
 }
 
+.gradient-bg-darkBorder{
+    border: 1px solid;
+    border-radius: 8px;
+    border-image-repeat: round;
+    /* border-image-slice: 10; */
+    border-image-source: linear-gradient(94.05deg, #FFFFFF -161.35%, rgba(255, 255, 255, 0) 99.97%);
+    -webkit-mask: /*4*/
+        linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; /*5'*/
+        mask-composite: exclude; /*5*/
+}
+
 .gradient-bg-dark{
     background: linear-gradient(94.24deg, #033042 -0.03%, #005C83 99.97%),
     linear-gradient(94.05deg, #FFFFFF -161.35%, rgba(255, 255, 255, 0) 99.97%);
 }
 
 .gradient-bg-white{
-    border: 1px solid;
     border-image-source: linear-gradient(94.05deg, #FFFFFF -161.35%, rgba(255, 255, 255, 0) 99.97%);
 }
+
+.gradient-bg-checkbox{
+    border: 1px solid;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #CFF1FF 0%, #2D5666 100%);
+    border-image-repeat: round;
+    border-image-slice: 10;
+    border-image-source: linear-gradient(180deg, #CFF1FF 0%, #2D5666 100%);
+    -webkit-mask: /*4*/
+        linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; /*5'*/
+        mask-composite: exclude; /*5*/
+}
+
+
 
 
