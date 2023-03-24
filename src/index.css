@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.gradient-bg-welcome{
+    background: linear-gradient(270deg, #05445E 0%, #022534 100%);
+}
+
+.gradient-bg-light{
+    background: linear-gradient(90.76deg, #FFFFFF 0%, #DFF6FF 144.63%);
+}
+
+.gradient-bg-dark{
+    background: linear-gradient(94.24deg, #033042 -0.03%, #005C83 99.97%),
+    linear-gradient(94.05deg, #FFFFFF -161.35%, rgba(255, 255, 255, 0) 99.97%);
+}
+
+.gradient-bg-white{
+    border: 1px solid;
+    border-image-source: linear-gradient(94.05deg, #FFFFFF -161.35%, rgba(255, 255, 255, 0) 99.97%);
+}
+
+
