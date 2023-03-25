@@ -8,6 +8,15 @@
     margin: 0;
 }
 
+.hero-img { 
+    background: url(images/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
 .gradient-bg-welcome{
     background: linear-gradient(270deg, #05445E 0%, #022534 100%);
 }
@@ -38,6 +47,12 @@
     border-image-source: linear-gradient(94.05deg, #FFFFFF -161.35%, rgba(255, 255, 255, 0) 99.97%);
 }
 
+.gradient-big-bg-light{
+    background: linear-gradient(90.76deg, #FFFFFF 0%, #DFF6FF 144.63%);
+}
+
+
+
 .gradient-bg-checkbox{
     border: 1px solid;
     border-radius: 8px;
@@ -54,4 +69,8 @@
 
 
 
-
+.gradient-graph{
+    /* background-image: url('./images/bg-graph.png'); */
+    background: linear-gradient(180deg, #F7FAFF 0%, rgba(232, 240, 255, 0) 100%);
+    /* background: red;  */
+}
