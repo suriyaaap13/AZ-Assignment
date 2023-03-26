@@ -1,5 +1,6 @@
 import './App.css';
 import hero from './images/hero-image-1.png';
+import AZLogo from './images/AZ-logo.png';
 import { FiArrowRight } from "react-icons/fi";
 import CourseContent from './components/CourseContent';
 import CourseAchiev from './components/CourseAchiev';
@@ -122,11 +123,11 @@ export default function App() {
                 <div className='ml-[1.1vw] my-[1.1vw]'>
                   <div className='font-dmSans text-[1.25vw] font-medium text-[#0F0F0F]'>Premium Victory Batch</div>
                   <div className='font-rubik font-bold text-[3vw] line-through text-[#818181]'>₹19,999</div>
-                  <div className='font-rubik font-extrabold text-[3.75vw] gradient-price'>₹13,999</div>
+                  <div className='font-rubik font-extrabold text-[3.75vw] mt-[-27px] gradient-price'>₹13,999</div>
                 </div>
                 {/* Image part of the Card */}
-                <div>
-                  <img alt='Logo' src=''/>
+                <div className='opacity-40'>
+                  <img alt='Logo' className='h-[14.5vw]' src={AZLogo}/>
                 </div>
               </div>
               {/* End of Upper Card Part */}
