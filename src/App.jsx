@@ -114,7 +114,7 @@ export default function App() {
 
 
           {/* Right Part */}
-          <div className='my-[5.2vw] mx-[5.9vw] mr-[10.19vw]'>
+          <div className='my-[5.2vw] mx-[5.9vw] mr-[10.19vw] letter-spacing drop-shadow-2xl'>
             {/* Course Card */}
             <div className=''>
               {/* Upper Card */}
@@ -161,11 +161,8 @@ export default function App() {
 
             </div>
           </div>
+        
         </div>
-      
-      
-
-
     </div>
       
   )
