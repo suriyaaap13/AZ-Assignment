@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'texture': "url('./images/bg-texture.png')",
+      },
       spacing: {
         '100': '47.4375rem'
       },
@@ -18,3 +21,5 @@ module.exports = {
   },
   plugins: [],
 }
+
+
