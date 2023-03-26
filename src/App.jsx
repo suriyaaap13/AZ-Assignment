@@ -83,67 +83,86 @@ export default function App() {
       
 
       {/* Buy Course Section */}
-      <div>
+      
+        <div className='gradient-bg-course flex justify-between w-full'>
 
-      </div>
-      <div className='gradient-bg-course flex'>
-
-        {/* Left Part */}
-        <div className='ml-[10.417vw] my-[11vw] letter-spacing'>
-          
-          {/* Hero Text in Course Purchase Section */}
-          <div className=' font-rubik font-bold lg:font-extrabold text-[3.33vw] text-[#000000]'>
-            Invest in skills, <br/> <span className='gradient-earn10X'>earn 10X</span> of what you <br/> paid.
-          </div>
-          
-          {/* Supporting Text in Purchase Section */}
-          <div className='my-[2vw] text-[#000000] font-dmSans font-normal text-[1.25vw] leading-[2vw]'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br/> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim <br/> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br/> aliquip ex ea commodo consequat.
-          </div>
-          {/* End of Supporting Text in Purchase Section */}
-          
-          {/* Check Box with Achiements */}
-          <div className='my-[5vw] font-dmSans fond-bold'>
-            <div className='grid grid-rows-2 grid-flow-col gap-[2.4vw]' >
-              <CourseAchiev title={"1.2 Cr/Year"} subtitle = {"highest fresher package"} />
-              <CourseAchiev title={"1000+ Offers"} subtitle = {"from top companies"} />
-              <CourseAchiev title={"Multiple <100 Ranks"} subtitle = {"in kickstart last year"} />
-              <CourseAchiev title={"Trusted by IITians"} subtitle = {"for their career prep"} />
+          {/* Left Part */}
+          <div className='ml-[8vw] my-[11vw] letter-spacing'>
+            
+            {/* Hero Text in Course Purchase Section */}
+            <div className=' font-rubik font-bold lg:font-extrabold text-[3.33vw] text-[#000000]'>
+              Invest in skills, <br/> <span className='gradient-earn10X'>earn 10X</span> of what you <br/> paid.
             </div>
-          </div>
-        </div>
-        
-
-        {/* Right Part */}
-        <div>
-          {/* Course Card */}
-          <div>
-            {/* Upper Card */}
-            <div>
-              <div>Premium Victory Batch</div>
-              <div>₹19,999</div>
-              <div>₹13,999</div>
-              {/* Image part of the Card */}
-              <div>
-
+            
+            {/* Supporting Text in Purchase Section */}
+            <div className='my-[2vw] text-[#000000] font-dmSans font-normal text-[1.25vw] leading-[2vw]'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br/> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim <br/> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br/> aliquip ex ea commodo consequat.
+            </div>
+            {/* End of Supporting Text in Purchase Section */}
+            
+            {/* Check Box with Achiements */}
+            <div className='my-[5vw] font-dmSans fond-bold'>
+              <div className='grid grid-rows-2 grid-flow-col gap-[2.4vw]' >
+                <CourseAchiev title={"1.2 Cr/Year"} subtitle = {"highest fresher package"} />
+                <CourseAchiev title={"1000+ Offers"} subtitle = {"from top companies"} />
+                <CourseAchiev title={"Multiple <100 Ranks"} subtitle = {"in kickstart last year"} />
+                <CourseAchiev title={"Trusted by IITians"} subtitle = {"for their career prep"} />
               </div>
             </div>
-            {/* List of Content in the course */}
-            <div>
+          </div>
+
+
+          {/* Right Part */}
+          <div className='my-[5.2vw] mx-[5.9vw] mr-[10.19vw]'>
+            {/* Course Card */}
+            <div className=''>
+              {/* Upper Card */}
+              <div className='border-2 rounded-t-lg w-full bg-[#FFFFFF] flex justify-between'>
+                {/* Upper Card left Side */}
+                <div className='ml-[1.1vw] my-[1.1vw]'>
+                  <div className='font-dmSans text-[1.25vw] font-medium text-[#0F0F0F]'>Premium Victory Batch</div>
+                  <div className='font-rubik font-bold text-[3vw] line-through text-[#818181]'>₹19,999</div>
+                  <div className='font-rubik font-extrabold text-[3.75vw] gradient-price'>₹13,999</div>
+                </div>
+                {/* Image part of the Card */}
+                <div>
+                  <img alt='Logo' src=''/>
+                </div>
+              </div>
+              {/* End of Upper Card Part */}
+
+              {/* Lower Part of the Card */}
+              <div>
+                {/* List of Content in the course */}
+                <div className='gradient-bg-welcome text-[#FFFFFF] rounded-b-lg'>
+                  <div className='p-[1.5vw]'>
+                    <CourseContent>100+ Hrs Live Content</CourseContent>
+                    <CourseContent>50+ Hrs Contest</CourseContent>
+                    <CourseContent>500+ Problems</CourseContent>
+                    <CourseContent>Includes an interview bootcamp and <br/> access to a mentor network</CourseContent>
+                    <CourseContent>Enjoy access to our content for one year <br/> (paid extensions available)</CourseContent>
+                    <CourseContent>Flexible payment options, including no-<br/>cost EMI, are available.</CourseContent>
+                    <button className='py-[8px] w-full gradient-big-bg-light rounded-lg'>
+                      <div className='flex justify-center items-center text-[#043C53] font-dmSans font-bold text-[1.15vw] text-[#043C53]'>
+                        Join Now 
+                        <div className='ml-[5px] font-extrabold'>
+                          <FiArrowRight/>
+                        </div>
+                        
+                      </div>                    
+                    </button>
+                  </div>
+                </div>
+                {/* End of List of Content in the course */}
+              </div>
+              {/* End of Lower Part of the Card */}
               
-              <CourseContent>100+ Hrs Live Content</CourseContent>
-              <CourseContent>50+ Hrs Contest</CourseContent>
-              <CourseContent>500+ Problems</CourseContent>
-              <CourseContent>Includes an interview bootcamp and access to a mentor network</CourseContent>
-              <CourseContent>Enjoy access to our content for one year (paid extensions available)</CourseContent>
-              <CourseContent>Flexible payment options, including no-cost EMI, are available.</CourseContent>
 
-
-              <button className='gradient-big-bg-light  text-[#043C53] flex justify-center items-center'>Join Now <FiArrowRight/></button>
             </div>
           </div>
         </div>
-      </div>
+      
+      
 
 
     </div>
