@@ -94,12 +94,12 @@ export default function App() {
           
           {/* Hero Text in Course Purchase Section */}
           <div className=' font-rubik font-extrabold sm:text-center lg:text-left sm:text-[8.2vw] md:text-[3.33vw] text-[#000000]'>
-            Invest in skills, <br/> <span className='sm:block gradient-earn10X'>earn 10X</span> of what you <span className='md:block'>paid.</span>
+            Invest in skills, <br/> <span className='sm:block lg:inline gradient-earn10X'>earn 10X</span> of what you <span className='md:block'>paid.</span>
           </div>
           
           {/* Supporting Text in Purchase Section */}
-          <div className='sm:w-full sm:my-[6.15vw] md:my-[2vw] text-[#000000] font-dmSans font-normal tracking-[-0.03em] md:leading-[2vw] sm:text-[3.1vw] md:text-[1.25vw] sm:flex sm:justify-center sm:items-center'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br/> eiusmod tempor incididunt ut labore et dolore magna aliqua. <span className='sm:invisible md:visible'>Ut enim <br/> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br/> aliquip ex ea commodo consequat.</span>
+          <div className='sm:w-full sm:my-[6.15vw] md:my-[2vw] text-[#000000] font-dmSans font-normal tracking-[-0.03em] md:leading-[2vw] sm:text-[3.1vw] md:text-[1.25vw] sm:text-center md:text-left'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br/> eiusmod tempor incididunt ut labore et dolore magna aliqua. <span className='sm:hidden md:inline'>Ut enim <br/> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br/> aliquip ex ea commodo consequat.</span>
           </div>
           {/* End of Supporting Text in Purchase Section */}
           
