@@ -29,7 +29,7 @@ export default function App() {
         <div className="gradient-bg-welcome md:grid md:grid-flow-col md:grid-cols-3 md:overflow-hidden">       
             
             {/* Text Section */}
-            <div className='md:col-span-2 text-white sm:mx-[4vw] md:ml-[8vw] md:mr-[0px] tracking-[-0.03em] py-[5vw] md:z-10'>
+            <div className='md:col-span-2 text-white sm:mx-[4vw] md:ml-[8vw] md:mr-[0px] tracking-[-0.03em] sm:pt-[5vw] md:py-[5vw] md:z-10'>
               
               {/* Welcome text */}
               <div className='font-extrabold sm:text-[8.2vw] md:text-[3.5vw] not-italic font-rubik md:w-100'>
