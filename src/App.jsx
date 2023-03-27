@@ -138,7 +138,7 @@ export default function App() {
             <div>
               {/* List of Content in the course */}
               <div className='gradient-bg-welcome text-[#FFFFFF] rounded-b-lg'>
-                <div className='p-[1.5vw]'>
+                <div className='sm:p-[6.14vw] md:p-[1.5vw]'>
                   <CourseContent>100+ Hrs Live Content</CourseContent>
                   <CourseContent>50+ Hrs Contest</CourseContent>
                   <CourseContent>500+ Problems</CourseContent>
@@ -146,7 +146,7 @@ export default function App() {
                   <CourseContent>Enjoy access to our content for one year <br/> (paid extensions available)</CourseContent>
                   <CourseContent>Flexible payment options, including no-<br/>cost EMI, are available.</CourseContent>
                   <button className='py-[8px] w-full gradient-big-bg-light rounded-lg'>
-                    <div className='flex justify-center items-center text-[#043C53] font-dmSans font-bold text-[1.15vw] text-[#043C53]'>
+                    <div className='flex justify-center items-center text-[#043C53] font-dmSans font-bold sm:text-[3.1vw] md:text-[1.15vw]'>
                       Join Now 
                       <div className='ml-[5px] font-extrabold'>
                         <FiArrowRight/>
