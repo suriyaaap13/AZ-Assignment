@@ -11,8 +11,8 @@ export default function App() {
 
   // Checkbox in Hero Section
   const renderedCheckbox = (
-    <div className='flex'>
-      <div className='gradient-bg-checkbox w-[3.33vw] h-[3.33vw] p-4 mr-[1.25vw]'></div>
+    <div className='flex items-center'>
+      <div className='gradient-bg-checkbox w-[3.33vw] h-[3.33vw] p-4 mr-[2.63vw] md:mr-[1.25vw]'></div>
       <div className='flex justify-center items-center'>
         Lorem ipsum dolor sit amet
       </div>
@@ -53,6 +53,7 @@ export default function App() {
                   </button>
 
                   
+                  
                   <button className='flex gradient-bg-dark justify-center items-center text-[#FFFFFF] w-full md:w-[18vw] h-[3.72vw] md:h-[3.33vw] py-[3.3vw] mt-[3.6vw]  md:px-[20px] md:py-[8px] text-[3.1vw] md:text-[1.146vw] rounded md:rounded-lg '>
                     <span className='p-[2vw] md:py-[8px]'>View curriculum</span>
                   </button>
@@ -61,7 +62,7 @@ export default function App() {
 
 
                 {/* Checkbox */}
-                <div className='grid grid-rows-2 grid-flow-col gap-4 my-[2.8vw] md:my-[0vw]'>
+                <div className='w-full mx-[15px] md:mx-[0px] grid grid-rows-2 grid-flow-col gap-4 my-[2.8vw] md:my-[0vw]'>
 
                   
                   {renderedCheckbox}

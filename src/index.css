@@ -35,6 +35,10 @@
   }
 
 
+.gradient-bg-view-curriculum{
+    background: linear-gradient(94.24deg, #033042 -0.03%, #005C83 99.97%);
+}
+
 .graph-gradient{
     background: linear-gradient(180deg, #F7FAFF 0%, rgba(232, 240, 255, 0) 100%);
 }
