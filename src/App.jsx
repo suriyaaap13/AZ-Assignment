@@ -116,20 +116,20 @@ export default function App() {
 
 
         {/* Right Part */}
-        <div className='relative z-10 my-[5.2vw] mx-[5.9vw] mr-[8vw] letter-spacing drop-shadow-2xl'>
+        <div className='relative z-10 my-[5.2vw] mx-[5.9vw] mr-[7vw] letter-spacing drop-shadow-2xl'>
           {/* Course Card */}
           <div className=''>
             {/* Upper Card */}
             <div className='border-2 rounded-t-lg w-full bg-[#FFFFFF] flex justify-between'>
               {/* Upper Card left Side */}
-              <div className='ml-[1.1vw] my-[1.1vw]'>
-                <div className='font-dmSans text-[1.25vw] font-medium text-[#0F0F0F]'>Premium Victory Batch</div>
-                <div className='font-rubik font-bold text-[3vw] line-through text-[#818181]'>₹19,999</div>
-                <div className='font-rubik font-extrabold text-[3.75vw] mt-[-2vw] gradient-price'>₹13,999</div>
+              <div className='sm:ml-[4.05vw] sm:my-[4.05vw] md:ml-[1.1vw] md:my-[1.1vw]'>
+                <div className='font-dmSans font-medium text-[#0F0F0F] sm:text-[3vw] md:text-[1.25vw]'>Premium Victory Batch</div>
+                <div className='font-rubik font-bold line-through text-[#818181] sm:text-[6.154vw] md:text-[3vw]'>₹19,999</div>
+                <div className='font-rubik font-extrabold sm:text-[8.2vw] md:text-[3.75vw] mt-[-2vw] gradient-price'>₹13,999</div>
               </div>
               {/* Image part of the Card */}
               <div className='opacity-40'>
-                <img alt='Logo' className='h-[14.5vw]' src={AZLogo}/>
+                <img alt='Logo' className='sm:h-[32vw] md:h-[14.5vw]' src={AZLogo}/>
               </div>
             </div>
             {/* End of Upper Card Part */}
