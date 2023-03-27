@@ -1,6 +1,7 @@
 import './App.css';
 import hero from './images/hero-image-1.png';
 import AZLogo from './images/AZ-logo.png';
+import Graph from './images/bg-graph.png';
 import { FiArrowRight } from "react-icons/fi";
 import CourseContent from './components/CourseContent';
 import CourseAchiev from './components/CourseAchiev';
@@ -18,11 +19,6 @@ export default function App() {
     </div>
   );
 
-  
-  
-  
-  
-
   return (
     <div>
 
@@ -30,71 +26,80 @@ export default function App() {
       {/* Setting the background Texture */}
       <div className="bg-texture">
         {/* Hero Section */}
-        <div className="gradient-bg-welcome grid grid-flow-col grid-cols-3 overflow-hidden">       
+        <div className="gradient-bg-welcome md:grid md:grid-flow-col md:grid-cols-3 md:overflow-hidden">       
             
             {/* Text Section */}
-            <div className='col-span-2 text-white ml-[8vw] tracking-[-0.03em] py-[5vw] z-10'>
+            <div className='md:col-span-2 text-white sm:mx-[4vw] md:ml-[8vw] md:mr-[0px] tracking-[-0.03em] py-[5vw] md:z-10'>
               
               {/* Welcome text */}
-              <div className='font-extrabold text-[3.5vw] not-italic font-rubik w-100'>
+              <div className='font-extrabold sm:text-[8.2vw] md:text-[3.5vw] not-italic font-rubik md:w-100'>
                 Be better at DSA & CP
               </div>
             
               {/* Supporting Welcome Text */}
-              <div className='font-normal font-dmSans text-[1.25vw]'>
+              <div className='md:font-normal font-dmSans sm:text-[3vw] sm:w-full sm:text-center lg:text-left md:text-[1.25vw]'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br/>
                 eiusmod tempor incididunt ut labore et dolore magna aliqua
               </div>
             
-            
-              {/* Join Buttons */}
-              <div className='mt-[1.589vw] font-inter flex font-bold'>
-                <button className='flex justify-center items-center w-[12.24vw] h-[3.33vw] gradient-bg-light px-[20px] py-[8px] text-[1.146vw] text-[#05445E] rounded-lg mr-[1.67vw]'>
-                  <span className='py-[8px]'>Join now -&gt;</span>
-                </button>
 
+              <div className='sm:flex sm:flex-col-reverse md:flex-col'>
                 
-                <button className='flex border-white justify-center items-center h-[3.33vw] gradient-bg-dark px-[20px] py-[8px] text-[1.146vw] text-[#FFFFFF] rounded-lg '>
-                  <span className='py-[8px]'>View curriculum</span>
-                </button>
+                {/* Join Buttons */}
+                <div className='font-inter font-bold sm:mt-[1vw] md:mt-[0vw] md:flex'>
+                  
+                  <button className='flex justify-center gradient-bg-light text-[#05445E] items-center sm:w-full md:w-[18vw] sm:h-[3.72vw] md:h-[3.33vw] sm:py-[3.3vw] sm:my-[3.6vw] md:px-[20px] md:py-[8px] sm:text-[3.1vw]  md:text-[1.146vw]  sm:rounded md:rounded-lg md:mr-[1.67vw]'>
+                    <span className='sm:p-[2vw] md:py-[8px]'>Join now -&gt;</span>
+                  </button>
+
+                  
+                  <button className='flex gradient-bg-dark justify-center items-center text-[#FFFFFF] sm:w-full md:w-[18vw] sm:h-[3.72vw] md:h-[3.33vw] sm:py-[3.3vw] sm:mt-[3.6vw]  md:px-[20px] md:py-[8px] sm:text-[3.1vw] md:text-[1.146vw] sm:rounded md:rounded-lg '>
+                    <span className='sm:p-[2vw] md:py-[8px]'>View curriculum</span>
+                  </button>
+                
+                </div>
+
+
+                {/* Checkbox */}
+                <div className='grid grid-rows-2 grid-flow-col gap-4 sm:my-[2.8vw] md:my-[0vw]'>
+
+                  
+                  {renderedCheckbox}
+                  {renderedCheckbox}
+                  {renderedCheckbox}
+                  {renderedCheckbox}
+                  
+                </div>
+              
               </div>
-
-
-              {/* Checkbox */}
-              <div className='grid grid-rows-2 grid-flow-col gap-4 my-[2.8vw]'>
-
-                
-                {renderedCheckbox}
-                {renderedCheckbox}
-                {renderedCheckbox}
-                {renderedCheckbox}
-                
-              </div>
+              
             
             </div>
 
             {/* AZ Logo */}
-            <div className='col-span-1 shrink-0 ml-[-5.2vw]'> 
-              <img src={hero} className='scale-150' />
+            <div className='md:col-span-1 md:shrink-0 md:ml-[-5.2vw]'> 
+              <img src={hero} className='md:scale-150' />
             </div>
           
         </div>
       </div>
 
       {/* Buy Course Section */}
-      <div className='gradient-bg-course flex justify-between w-full'>
+      <div className='relative isolate gradient-bg-course w-full sm:block md:flex md:justify-between '>
 
+        <img src={Graph} className='z-0 absolute inset-0'/>
+        
         {/* Left Part */}
-        <div className='ml-[8vw] my-[11vw] letter-spacing'>
+        <div className='relative z-10 sm:mx-[4vw] md:ml-[8vw] py-[11vw] sm:tracking-[-0.03em] md:letter-spacing '>
           
           {/* Hero Text in Course Purchase Section */}
-          <div className=' font-rubik font-bold lg:font-extrabold text-[3.33vw] text-[#000000]'>
-            Invest in skills, <br/> <span className='gradient-earn10X'>earn 10X</span> of what you <br/> paid.
+          <div className=' font-rubik font-extrabold sm:text-center lg:text-left sm:text-[8.2vw] md:text-[3.33vw] text-[#000000]'>
+            Invest in skills, <br/> <span className='sm:block gradient-earn10X'>earn 10X</span> of what you <span className='md:block'>paid.</span>
           </div>
           
           {/* Supporting Text in Purchase Section */}
-          <div className='my-[2vw] text-[#000000] font-dmSans font-normal text-[1.25vw] leading-[2vw]'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br/> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim <br/> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br/> aliquip ex ea commodo consequat.
+          <div className='sm:w-full sm:my-[6.15vw] md:my-[2vw] text-[#000000] font-dmSans font-normal tracking-[-0.03em] md:leading-[2vw] sm:text-[3.1vw] md:text-[1.25vw] sm:flex sm:justify-center sm:items-center'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br/> eiusmod tempor incididunt ut labore et dolore magna aliqua. <span className='sm:invisible md:visible'>Ut enim <br/> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br/> aliquip ex ea commodo consequat.</span>
           </div>
           {/* End of Supporting Text in Purchase Section */}
           
@@ -111,7 +116,7 @@ export default function App() {
 
 
         {/* Right Part */}
-        <div className='my-[5.2vw] mx-[5.9vw] mr-[10.19vw] letter-spacing drop-shadow-2xl'>
+        <div className='relative z-10 my-[5.2vw] mx-[5.9vw] mr-[8vw] letter-spacing drop-shadow-2xl'>
           {/* Course Card */}
           <div className=''>
             {/* Upper Card */}
@@ -120,7 +125,7 @@ export default function App() {
               <div className='ml-[1.1vw] my-[1.1vw]'>
                 <div className='font-dmSans text-[1.25vw] font-medium text-[#0F0F0F]'>Premium Victory Batch</div>
                 <div className='font-rubik font-bold text-[3vw] line-through text-[#818181]'>₹19,999</div>
-                <div className='font-rubik font-extrabold text-[3.75vw] mt-[-27px] gradient-price'>₹13,999</div>
+                <div className='font-rubik font-extrabold text-[3.75vw] mt-[-2vw] gradient-price'>₹13,999</div>
               </div>
               {/* Image part of the Card */}
               <div className='opacity-40'>

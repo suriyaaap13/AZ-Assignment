@@ -32,9 +32,12 @@
     left: 50%;
     min-height: 100%;
     min-width: 100%;
-    /* transform: translate(-50%, -50%); */
   }
 
+
+.graph-gradient{
+    background: linear-gradient(180deg, #F7FAFF 0%, rgba(232, 240, 255, 0) 100%);
+}
 
 .gradient-bg-welcome{
     background: linear-gradient(270deg, #05445E 0%, #022534 100%);
